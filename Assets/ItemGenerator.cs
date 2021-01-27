@@ -34,7 +34,7 @@ public class ItemGenerator : MonoBehaviour
             int spawnPositionZ = spawnNum*spawnInterval + spawnDistance;
             if ( spawnPositionZ < goalPos )
             {
-                ItemSpawn( spawnNum*spawnInterval + spawnDistance );
+                ItemSpawn( spawnPositionZ );
             }
             spawnNum++;
         }
