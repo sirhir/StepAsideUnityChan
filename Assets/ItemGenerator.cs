@@ -10,9 +10,9 @@ public class ItemGenerator : MonoBehaviour
     private GameObject unitychan;
 
     private int spawnNum = 0; //何回スポーンさせたか
-    private int spawnInterval = 15; //距離15間隔にアイテム生成
-    private int spawnDistance = 80; //unityちゃんのz前方50にアイテム生成
-    private int goalPos = 360; //z360以降の位置ではスポーンしない
+    private int spawnInterval = 15; //距離n間隔にアイテム生成
+    private int spawnDistance = 80; //unityちゃんのz前方nにアイテム生成
+    private int goalPos = 360; //zn以降の位置ではスポーンしない
     private float posRange = 3.4f; //アイテムを出すx方向の範囲
 
 
