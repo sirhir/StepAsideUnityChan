@@ -23,12 +23,6 @@ public class ItemGenerator : MonoBehaviour
 
     void Update()
     {
-        this.transform.position = new Vector3(
-            this.transform.position.x,
-            this.transform.position.y,
-            this.unitychan.transform.position.z
-        );
-
         if ( spawnNum*spawnInterval < this.unitychan.transform.position.z )
         {
             int spawnPositionZ = spawnNum*spawnInterval + spawnDistance;
@@ -68,11 +62,4 @@ public class ItemGenerator : MonoBehaviour
         }
     }
 
-    void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.tag == "CarTag" || other.gameObject.tag == "TrafficConeTag" || other.gameObject.tag == "CoinTag")
-        {
-            Destroy(other.gameObject);
-        }
-    }
 }
